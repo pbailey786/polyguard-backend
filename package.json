@@ -2,7 +2,6 @@
   "name": "polyguard-backend",
   "version": "0.1.0",
   "description": "PolyGuard Phase 3 - Real CLOB integration + Supabase database + WebSocket monitoring",
-  "type": "module",
   "main": "dist/index.js",
   "scripts": {
     "dev": "tsx watch src/index.ts",
