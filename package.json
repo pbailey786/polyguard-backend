@@ -1,0 +1,42 @@
+{
+  "name": "polyguard-backend",
+  "version": "0.1.0",
+  "description": "PolyGuard Phase 3 - Real CLOB integration + Supabase database + WebSocket monitoring",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "type-check": "tsc --noEmit",
+    "migrate": "npx drizzle-kit migrate"
+  },
+  "keywords": ["polymarket", "trading", "clob", "ethereum", "web3", "supabase", "postgresql"],
+  "author": "PolyGuard",
+  "license": "MIT",
+  "dependencies": {
+    "hono": "^4.0.0",
+    "@hono/node-server": "^1.0.0",
+    "@polymarket/clob-client": "^1.0.0",
+    "@supabase/supabase-js": "^2.38.0",
+    "drizzle-orm": "^0.28.0",
+    "postgres": "^3.4.0",
+    "ethers": "^6.10.0",
+    "siwe": "^2.1.4",
+    "dotenv": "^16.3.1",
+    "axios": "^1.6.5",
+    "zod": "^3.22.4",
+    "ws": "^8.15.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "tsx": "^4.7.0",
+    "@types/node": "^20.10.5",
+    "ts-node": "^10.9.2",
+    "drizzle-kit": "^0.20.0",
+    "@types/ws": "^8.5.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
